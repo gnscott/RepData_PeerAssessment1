@@ -74,8 +74,8 @@ maxMin <- intvlMax %% 100
 
 ```
 
-Interval with max number of steps is **`r intvlMax`** corresponding to a clock time
-of `r maxHr`:`r maxMin`.
+The name of the interval with max number of steps is **`r intvlMax`** corresponding to a 
+clock time of `r maxHr`:`r maxMin`.
 
 ```{r obsByIntvl, echo=FALSE}
 oldpar <- par(mar=c(5,4,6,2)+0.1)
@@ -88,6 +88,7 @@ par(oldpar)
 
 ## Imputing missing values
 
+We create a list of all missing data.
 
 ```{r missingData, echo=TRUE}
 iMiss <- which(is.na(adf$steps))
@@ -185,5 +186,6 @@ axis(1, seq(0,24,by=2), labels=sprintf('%d',seq(0,24,2)))
 legend('topleft', 'Weekend')
 par(oldpar)
 ```
+
 We can see by comparing these two curves that our subject likes to sleep in 
 and stay up later on the weekends.

@@ -77,13 +77,14 @@ maxHr <- floor(intvlMax / 100.)
 maxMin <- intvlMax %% 100
 ```
 
-Interval with max number of steps is **835** corresponding to a clock time
-of 8:35.
+The name of the interval with max number of steps is **835** corresponding to a 
+clock time of 8:35.
 
 ![plot of chunk obsByIntvl](figure/obsByIntvl.png) 
 
 ## Imputing missing values
 
+We create a list of all missing data.
 
 
 ```r
@@ -161,5 +162,6 @@ iwe_stats <- summarise(iwe_adf,
 
 
 ![plot of chunk panelPlot](figure/panelPlot.png) 
+
 We can see by comparing these two curves that our subject likes to sleep in 
 and stay up later on the weekends.
